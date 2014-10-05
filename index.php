@@ -7,4 +7,6 @@ define("TEMPLATES_DIR", __DIR__ . "/templates");
 require_once __DIR__ . "/engine/autoloader.php";
 Application\Application::run(  );
 
+Application\Application::run();
+$a;
 ?>
