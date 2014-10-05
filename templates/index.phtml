@@ -1,0 +1,15 @@
+<?
+    $rss=\Application\Application::getInstance()->getDbManipulation()->getRssList();
+
+    foreach($rss as $link=>$rss): ?>
+        <div class="item">
+            <h4><?=$link?></h4>
+            <ul>
+                <? foreach($rss as $k): ?>
+                    <li><a href="<?=$k['link']?>"><?=$k['title']?></a></li>
+                <? endforeach; ?>
+            </ul>
+        </div>
+        <hr>
+<? endforeach; ?>
+
