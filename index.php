@@ -10,4 +10,5 @@ Application\Application::run();
 Application\Application::run();
 $a;
 $d;
+$ff;
 ?>
